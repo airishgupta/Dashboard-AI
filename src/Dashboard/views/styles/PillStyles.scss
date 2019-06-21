@@ -1,0 +1,13 @@
+.dv2{
+  &__dashboard-pill{
+    &__container{
+      height: 30px;
+      border-radius: 15px;
+      padding: 8px;
+      border: solid 1px black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

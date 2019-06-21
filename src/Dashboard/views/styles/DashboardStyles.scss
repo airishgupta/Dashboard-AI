@@ -1,0 +1,12 @@
+.dv2 {
+  &__dashboard {
+    &__wrapper {
+      width: 100%;
+      background-color: #F6F6F6;
+    }
+    &__details-section {
+      display: flex;
+      padding: 20px;
+    }
+  }
+}
