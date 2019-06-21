@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './views/styles/DashboardContainerStyles.scss';
+import { Route, Switch } from 'react-router-dom';
 import Dashboard from './views/components/Dashboard';
 import SideBar from './views/components/SideBar';
 
@@ -15,7 +16,10 @@ const DashboardContainer = () => {
   return (
     <div className={styles.container}>
       <SideBar showSideBar={showSideBar} />
-      <Dashboard toggleSideBar={toggleSideBar} />
+      <Switch>
+        <Route path="/dashboard" render={() => <Dashboard toggleSideBar={toggleSideBar} />} />
+        <Route render={() => <h1>Not found</h1>} />
+      </Switch>
     </div>
   );
 };
