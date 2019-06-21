@@ -1,0 +1,40 @@
+{
+    "env": {
+        "browser": true
+    },
+    "parser": "babel-eslint",
+    "extends": "airbnb",
+    "plugins": [
+        "react",
+        "react-hooks"
+    ],
+    "parserOptions": {
+        "ecmaVersion": 2017,
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "sourceType": "module"
+    },
+    "globals":{
+        "var1": "writable",
+        "var2": "readonly"
+    },
+    "rules": {
+        "react-hooks/rules-of-hooks": "error",
+        "semi": "error",
+        "no-console": "off"
+    },
+    "overrides": [
+        {
+          "files": ["*-test.js","*.spec.js"],
+          "rules": {
+            "no-unused-expressions": "off"
+          }
+        }
+      ],
+
+    "settings": {
+        "sharedData": "Hello"
+    }
+
+}
